@@ -50,9 +50,13 @@ exports.config = {
   capabilities: [
     {
       browserName: "chrome",
+      maxInstances: 5,
+      acceptInsecureCerts: true,
     },
     {
       browserName: "firefox",
+      maxInstances: 5,
+      acceptInsecureCerts: true,
     },
   ],
 
