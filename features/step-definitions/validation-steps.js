@@ -7,6 +7,7 @@ Then(
   async function (expectedError) {
     const errorMessage = await LoginPage.getErrorMessage();
     expect(errorMessage).to.equal(expectedError);
+    console.log("INFO: Checking error message for empty input fields");
   }
 );
 
@@ -15,6 +16,7 @@ Then(
   async function (expectedError) {
     const errorMessage = await LoginPage.getErrorMessage();
     expect(errorMessage).to.equal(expectedError);
+    console.log("INFO: Checking error message for empty password field");
   }
 );
 
@@ -34,6 +36,7 @@ Then("I should see page Title {string}", async function (title) {
 
   const pageTitle = await browser.getTitle();
   expect(pageTitle).to.equal(title);
+  console.log("INFO: Testing if login was successful by checking page title");
 });
 
 Then(
@@ -41,5 +44,6 @@ Then(
   async function (expectedError) {
     const errorMessage = await LoginPage.getErrorMessage();
     expect(errorMessage).to.equal(expectedError);
+    console.log("INFO: Checking error message for wrong username or password");
   }
 );

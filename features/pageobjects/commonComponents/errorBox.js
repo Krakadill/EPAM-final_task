@@ -1,17 +1,11 @@
 class ErrorBox {
-  // Define the error message container
   get errorMessage() {
+    console.log("INFO: selecting error container");
     return $(".error-message-container h3");
   }
 
-  // Get the error message text
   async getErrorMessageText() {
     return await this.errorMessage.getText();
-  }
-
-  // Check if the error message is displayed
-  async isErrorDisplayed() {
-    return await this.errorMessage.isDisplayed();
   }
 }
 

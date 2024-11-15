@@ -16,5 +16,8 @@
     "@wdio/spec-reporter": "^9.2.8",
     "chai": "^5.1.2",
     "wdio-wait-for": "^3.0.11"
+  },
+  "dependencies": {
+    "@wdio/logger": "^9.1.3"
   }
 }
